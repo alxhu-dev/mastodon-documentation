@@ -202,7 +202,7 @@ When requesting other user's Collections or when making anonymous requests, only
 ## Get all Collections from a given account {#get_collections}
 
 ```http
-GET /api/v1/:account_id/collections HTTP/1.1
+GET /api/v1/accounts/:account_id/collections HTTP/1.1
 ```
 
 **Returns:** [Collections]({{< relref "entities/Collection#Collections" >}})\
@@ -270,7 +270,7 @@ If there is more than one page of results, a `Link` header will be included with
 ## Get all Collections the current account is featured in {#in_collections}
 
 ```http
-GET /api/v1/:account_id/in_collections HTTP/1.1
+GET /api/v1/accounts/:account_id/in_collections HTTP/1.1
 ```
 
 **Returns:** [Collections]({{< relref "entities/Collection#Collections" >}})\
